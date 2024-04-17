@@ -20,6 +20,7 @@ The objective of this data analysis project is to investigate the declining sale
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <h3>AIMS Grid for Data Analysis Project</h3>
+
 * Purpose: To unlock sales insight that are not visible before the sales team for decision support and automate them to reduced manual time spent in data gathering.
 
 * Stakeholders: Sales Director, Marketing Team, Customer Service Team, Data & Analytics Team, IT
