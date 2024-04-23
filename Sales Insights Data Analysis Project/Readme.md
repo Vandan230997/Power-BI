@@ -132,12 +132,18 @@ By segregating the data into fact and dimension tables within the star schema fr
 * Plotted two measures Total sales and Total Quantity sold to get a holistic idea on how much Total Revenue is generated and Total Quantity Sold.
 * Build clustered bar charts:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o Revenue by City to get an insight into how much revenue is generated in each city.
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o Total Quantity Sold by City to get an insight into how much quantity is sold in each city.
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o Top 5 Customers by Revenue using TOP N advance filter.
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o Top 5 Products by Revenue by using TOP N advance filter.
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o Build a line chart to see revenue trend over the months across years.
+
 * Added Slicers to filter over years and month of different years.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o Year
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o Month
 
 
