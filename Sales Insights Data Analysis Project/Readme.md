@@ -89,3 +89,19 @@ SELECT SUM(transactions.sales_amount) FROM transactions INNER JOIN date ON trans
 ```sql 
 SELECT SUM(transactions.sales_amount) FROM transactions INNER JOIN date ON transactions.order_date=date.date WHERE date.year=2020 AND date.month_name="January" AND transactions.currency="INR\r" OR transactions.currency="USD\r");
 ```
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<h3>ETL and Data Cleaning (Power BI) (SQL)</h3>
+Performed below steps to clean the data for analysis
+
+![image](https://github.com/Vandan230997/Power-BI/assets/165855297/fd39a211-6de6-4bde-9946-2009a3568633)
+
+•	Removed unnecessary data sales_markets table pertaining to states outside India as it only works in India.
+•	Removed the transactions with sales_amount less than or equal to 0 as it does not make sense.
+•	Created conditional columns to convert some of the transaction amounts to USD.
+•	Removed Duplicate values in sales transactions table.
+•	After performing the transformations, loaded the data in semantic model.
+
+
+
