@@ -64,12 +64,12 @@ Imported the data into MYSQL database and ran queries to understand the data. Fo
 
 * Check sum of sales in 2020
 
-```sql SELECT SUM(sales_amount) FROM transactions WHERE YEAR(order_date)=2020;
+```sql SELECT SUM(sales_amount) FROM transactions WHERE YEAR(order_date)=2020;```
 
 * Total Revenue in year 2020 in Mumbai
 
-```sql SELECT SUM(transactions.sales_amount) FROM transactions INNER JOIN date ON transactions.order_date=date.date WHERE date.year=2020 AND transactions.market_code="Mark002";
+```sql SELECT SUM(transactions.sales_amount) FROM transactions INNER JOIN date ON transactions.order_date=date.date WHERE date.year=2020 AND transactions.market_code="Mark002";```
 
 * Total revenue in year 2019, January Month
 
-```sql SELECT SUM(transactions.sales_amount) FROM transactions INNER JOIN date ON transactions.order_date=date.date WHERE date.year=2020 AND date.month_name="January" AND transactions.currency="INR\r" OR transactions.currency="USD\r");
+```sql SELECT SUM(transactions.sales_amount) FROM transactions INNER JOIN date ON transactions.order_date=date.date WHERE date.year=2020 AND date.month_name="January" AND transactions.currency="INR\r" OR transactions.currency="USD\r");```
