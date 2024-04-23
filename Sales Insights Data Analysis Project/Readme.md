@@ -115,9 +115,9 @@ In this project, the data has been meticulously modeled following the star schem
 
 Complementing the fact table, four additional tables have been established, namely:
 
-Sales Customers: This dimension table contains information related to customer attributes and demographics.
-Sales Products: A dimension table housing product-related details such as descriptions, categories, and specifications.
-Sales Markets: This dimension table encompasses market-specific information, including geographical data and market segments.
-Sales Date: Providing temporal context, this dimension table includes date-related attributes such as day, month, year, and any other relevant time-based information.
+* Sales Customers: This dimension table contains information related to customer attributes and demographics.
+* Sales Products: A dimension table housing product-related details such as descriptions, categories, and specifications.
+* Sales Markets: This dimension table encompasses market-specific information, including geographical data and market segments.
+* Sales Date: Providing temporal context, this dimension table includes date-related attributes such as day, month, year, and any other relevant time-based information.
 
 By segregating the data into fact and dimension tables within the star schema framework, the project ensures a streamlined and efficient approach to data analysis. This schema design facilitates seamless querying and reporting processes, empowering stakeholders to derive actionable insights swiftly and accurately from the dataset.
