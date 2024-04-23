@@ -44,32 +44,48 @@ Imported the data into MYSQL database and ran queries to understand the data. Fo
 
 * Transcations in year 2020
   
-```sqlSELECT * FROM transactions t JOIN sales.date d ON t.order_date =  d.date where year = 2020;```
+```sql
+SELECT * FROM transactions t JOIN sales.date d ON t.order_date =  d.date where year = 2020;
+```
 
 * Total Revenue in year 2020
 
-```sqlSELECT SUM(sales_amount) FROM transactions t JOIN sales.date d ON t.order_date =  d.date WHERE year = 2020;```
+```sql
+SELECT SUM(sales_amount) FROM transactions t JOIN sales.date d ON t.order_date =  d.date WHERE year = 2020;
+```
 
 * Total Revenue in year 2020 and Chennai
 
-```sql SELECT SUM(sales_amount) FROM transactions t JOIN sales.date d ON t.order_date =  d.date WHERE year = 2020 AND market_code = 'Mark001';```
+```sql
+SELECT SUM(sales_amount) FROM transactions t JOIN sales.date d ON t.order_date =  d.date WHERE year = 2020 AND market_code = 'Mark001';
+```
 
 * Distinct Products sold in Chennai
 
-```sql SELECT DISTINCT product_code FROM transactions WHERE market_code = "Mark001";```
+```sql 
+SELECT DISTINCT product_code FROM transactions WHERE market_code = "Mark001";
+```
 
 * Check sales amount less than 0
 
-```sql SELECT * FROM transactions WHERE sales_amount <=0;```
+```sql 
+SELECT * FROM transactions WHERE sales_amount <=0;
+```
 
 * Check sum of sales in 2020
 
-```sql SELECT SUM(sales_amount) FROM transactions WHERE YEAR(order_date)=2020;```
+```sql 
+SELECT SUM(sales_amount) FROM transactions WHERE YEAR(order_date)=2020;
+```
 
 * Total Revenue in year 2020 in Mumbai
 
-```sql SELECT SUM(transactions.sales_amount) FROM transactions INNER JOIN date ON transactions.order_date=date.date WHERE date.year=2020 AND transactions.market_code="Mark002";```
+```sql 
+SELECT SUM(transactions.sales_amount) FROM transactions INNER JOIN date ON transactions.order_date=date.date WHERE date.year=2020 AND transactions.market_code="Mark002";
+```
 
 * Total revenue in year 2019, January Month
 
-```sql SELECT SUM(transactions.sales_amount) FROM transactions INNER JOIN date ON transactions.order_date=date.date WHERE date.year=2020 AND date.month_name="January" AND transactions.currency="INR\r" OR transactions.currency="USD\r");```
+```sql 
+SELECT SUM(transactions.sales_amount) FROM transactions INNER JOIN date ON transactions.order_date=date.date WHERE date.year=2020 AND date.month_name="January" AND transactions.currency="INR\r" OR transactions.currency="USD\r");
+```
