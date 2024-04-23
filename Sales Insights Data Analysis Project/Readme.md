@@ -121,3 +121,23 @@ Complementing the fact table, four additional tables have been established, name
 * Sales Date: Providing temporal context, this dimension table includes date-related attributes such as day, month, year, and any other relevant time-based information.
 
 By segregating the data into fact and dimension tables within the star schema framework, the project ensures a streamlined and efficient approach to data analysis. This schema design facilitates seamless querying and reporting processes, empowering stakeholders to derive actionable insights swiftly and accurately from the dataset.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<h3>Dashboard Development</h3>
+<h4> Sales Insight <h4> 
+
+![image](https://github.com/Vandan230997/Power-BI/assets/165855297/79d1c2b3-3f8e-4906-b58d-b00e4626a2ff)
+
+•	Purpose: To highlight overall sales insights over markets, customers, and product with respect to date.
+•	Plotted two measures Total sales and Total Quantity sold to get a holistic idea on how much Total Revenue is generated and Total Quantity Sold.
+•	Build clustered bar charts:
+o	Revenue by City to get an insight into how much revenue is generated in each city.
+o	Total Quantity Sold by City to get an insight into how much quantity is sold in each city.
+o	Top 5 Customers by Revenue using TOP N advance filter.
+o	Top 5 Products by Revenue by using TOP N advance filter.
+•	Build a line chart to see revenue trend over the months across years.
+•	Added Slicers to filter over years and month of different years.
+o	Year
+o	Month
+
+
