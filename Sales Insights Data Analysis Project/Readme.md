@@ -124,7 +124,7 @@ By segregating the data into fact and dimension tables within the star schema fr
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <h3>Dashboard Development</h3>
-<h4> Sales Insight <h4> 
+<h4> Sales Insight </h4>
 
 ![image](https://github.com/Vandan230997/Power-BI/assets/165855297/79d1c2b3-3f8e-4906-b58d-b00e4626a2ff)
 
