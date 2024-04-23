@@ -92,7 +92,7 @@ SELECT SUM(transactions.sales_amount) FROM transactions INNER JOIN date ON trans
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<h3>ETL and Data Cleaning (Power BI) (SQL)</h3>
+<h3>ETL and Data Cleaning (Power BI)</h3>
 Performed below steps to clean the data for analysis
 
 ![image](https://github.com/Vandan230997/Power-BI/assets/165855297/fd39a211-6de6-4bde-9946-2009a3568633)
@@ -104,4 +104,20 @@ Performed below steps to clean the data for analysis
 * After performing the transformations, loaded the data in semantic model.
 
 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<h3>Data Modelling</h3>
 
+![image](https://github.com/Vandan230997/Power-BI/assets/165855297/cdd3f182-6051-4ec7-be3e-7b7f0faf8401)
+
+Adhering to best practices, the data modeling for this project has been executed in alignment with the star schema methodology. The star schema offers several advantages, primarily enabling easy slicing of data based on dimensions utilizing the fact table. By structuring the data in this manner, complex joins are avoided, consequently enhancing the performance of reporting processes.
+
+In this project, the data has been meticulously modeled following the star schema paradigm. The central component of the schema is the "Sales Transactions" table, serving as the fact table due to its granular representation of data. This table captures the core sales data and acts as the focal point for analysis and reporting.
+
+Complementing the fact table, four additional tables have been established, namely:
+
+Sales Customers: This dimension table contains information related to customer attributes and demographics.
+Sales Products: A dimension table housing product-related details such as descriptions, categories, and specifications.
+Sales Markets: This dimension table encompasses market-specific information, including geographical data and market segments.
+Sales Date: Providing temporal context, this dimension table includes date-related attributes such as day, month, year, and any other relevant time-based information.
+
+By segregating the data into fact and dimension tables within the star schema framework, the project ensures a streamlined and efficient approach to data analysis. This schema design facilitates seamless querying and reporting processes, empowering stakeholders to derive actionable insights swiftly and accurately from the dataset.
