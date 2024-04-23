@@ -97,11 +97,11 @@ Performed below steps to clean the data for analysis
 
 ![image](https://github.com/Vandan230997/Power-BI/assets/165855297/fd39a211-6de6-4bde-9946-2009a3568633)
 
-•	Removed unnecessary data sales_markets table pertaining to states outside India as it only works in India.
-•	Removed the transactions with sales_amount less than or equal to 0 as it does not make sense.
-•	Created conditional columns to convert some of the transaction amounts to USD.
-•	Removed Duplicate values in sales transactions table.
-•	After performing the transformations, loaded the data in semantic model.
+* Removed unnecessary data sales_markets table pertaining to states outside India as it only works in India.
+* Removed the transactions with sales_amount less than or equal to 0 as it does not make sense.
+* Created conditional columns to convert some of the transaction amounts to USD.
+* Removed Duplicate values in sales transactions table.
+* After performing the transformations, loaded the data in semantic model.
 
 
 
