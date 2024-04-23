@@ -44,11 +44,11 @@ Imported the data into MYSQL database and ran queries to understand the data. Fo
 
 * Transcations in year 2020
   
-```sql SELECT * FROM transactions t JOIN sales.date d ON t.order_date =  d.date where year = 2020;```
+```sqlSELECT * FROM transactions t JOIN sales.date d ON t.order_date =  d.date where year = 2020;```
 
 * Total Revenue in year 2020
 
-```sql SELECT SUM(sales_amount) FROM transactions t JOIN sales.date d ON t.order_date =  d.date WHERE year = 2020;```
+```sqlSELECT SUM(sales_amount) FROM transactions t JOIN sales.date d ON t.order_date =  d.date WHERE year = 2020;```
 
 * Total Revenue in year 2020 and Chennai
 
