@@ -1,5 +1,7 @@
 <h2>AtliQ Hardware Sales Insights Data Analysis Project</h2>
 
+![Poster](https://github.com/Vandan230997/Power-BI/assets/165855297/4c895d1a-5fb3-4b5f-a57b-861c624b9bc2)
+
 
 <h3>Table of Content</h3>
     <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Backgroud </h4> 
