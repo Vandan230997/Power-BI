@@ -128,6 +128,28 @@ Complementing the fact table, four additional tables have been established, name
 
 By segregating the data into fact and dimension tables within the star schema framework, the project ensures a streamlined and efficient approach to data analysis. This schema design facilitates seamless querying and reporting processes, empowering stakeholders to derive actionable insights swiftly and accurately from the dataset.
 
+<b> DAX (Data Analysis Expressions)
+Key Measures:</b>
+
+```Revenue = SUM('sales transactions'[sales_amount])
+Total Qty sold = SUM('sales transactions'[sales_qty]) 
+
+Total Cost = SUM('sales transactions'[cost_price])
+Total Profit = SUM('sales transactions'[norm sales amount])
+
+Average Profit Margin Percentage = AVERAGE('sales transactions'[profit_margin_percentage])
+
+Profit Margin % = DIVIDE([Total Profit],[Revenue],0)
+
+Profit Margin Contribution % = DIVIDE([Total Profit],CALCULATE([Total Profit],ALL('sales customers'),ALL('sales products'),ALL('sales markets')))
+
+Sales Contribution % = DIVIDE([Revenue],CALCULATE([Revenue],ALL('sales customers'),ALL('sales products'),ALL('sales markets')))
+
+Target Difference = [Profit Margin %] - [Profit Target Value]
+
+Revenue LY = CALCULATE([Revenue],SAMEPERIODLASTYEAR('sales date'[date]))
+```
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <h3>Dashboard Development</h3>
 
@@ -152,3 +174,7 @@ By segregating the data into fact and dimension tables within the star schema fr
 
 
 * Purpose: To measure the performance of profits in different markets and per customer with respect to targets. Setting target helps assess the performance of markets with respect to profit margin %. Markets performing below target will be highlighted in grey.
+
+
+<h3>Insights</h3>
+Performed below steps to clean the data for analysis
