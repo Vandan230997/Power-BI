@@ -132,9 +132,11 @@ By segregating the data into fact and dimension tables within the star schema fr
 Key Measures:</b>
 
 ```Revenue = SUM('sales transactions'[sales_amount])
+
 Total Qty sold = SUM('sales transactions'[sales_qty]) 
 
 Total Cost = SUM('sales transactions'[cost_price])
+
 Total Profit = SUM('sales transactions'[norm sales amount])
 
 Average Profit Margin Percentage = AVERAGE('sales transactions'[profit_margin_percentage])
@@ -176,5 +178,17 @@ Revenue LY = CALCULATE([Revenue],SAMEPERIODLASTYEAR('sales date'[date]))
 * Purpose: To measure the performance of profits in different markets and per customer with respect to targets. Setting target helps assess the performance of markets with respect to profit margin %. Markets performing below target will be highlighted in grey.
 
 
-<h3>Insights</h3>
-Performed below steps to clean the data for analysis
+<h3>Insights and Actions</h3>
+
+<b>Insights</b>
+•	Mumbai is performing well in terms of profit as it contributes most in profit shares i.e. 23.89 % with 14.19 % of revenue share.
+•	Electricalsara stores, Nixon and electricalsytical are the best profit contributing customers as their profit margin contribution is 37.75%, 7.24%, 6.85% respectively.
+•	Electricalslance is the worst profit contributing customer as their profit margin contribution % is -0.15 % and Profit margin is -2.01%, which decreases our profit. 
+•	With 1% profit margin % target, Hyderabad(0.63%), Kanpur(-0.49%), and Bengaluru(-20.78%) are not well performing markets.
+
+<b>Actions</b>
+•	We can implement sales strategies that are applied in Mumbai to other Markets.
+•	We can provide discounts to most profit contributing customers.
+•	Analyze what is happening wrong with epic stores and strategize accordingly.
+•	Classify the customers according to range of profit contribution and profit margin.
+
