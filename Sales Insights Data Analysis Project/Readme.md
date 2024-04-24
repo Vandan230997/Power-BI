@@ -10,7 +10,7 @@
     <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6. ETL and Data Cleaning (Power BI) </h4> 
     <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7. Data Modelling </h4>
     <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8. Dashboard Development </h4>
-    <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9. Insights </h4>
+    <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9. Insights and Action </h4>
     <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10. References </h4> 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -181,14 +181,28 @@ Revenue LY = CALCULATE([Revenue],SAMEPERIODLASTYEAR('sales date'[date]))
 <h3>Insights and Actions</h3>
 
 <b>Insights</b>
+
 •	Mumbai is performing well in terms of profit as it contributes most in profit shares i.e. 23.89 % with 14.19 % of revenue share.
 •	Electricalsara stores, Nixon and electricalsytical are the best profit contributing customers as their profit margin contribution is 37.75%, 7.24%, 6.85% respectively.
 •	Electricalslance is the worst profit contributing customer as their profit margin contribution % is -0.15 % and Profit margin is -2.01%, which decreases our profit. 
 •	With 1% profit margin % target, Hyderabad(0.63%), Kanpur(-0.49%), and Bengaluru(-20.78%) are not well performing markets.
 
 <b>Actions</b>
+
 •	We can implement sales strategies that are applied in Mumbai to other Markets.
 •	We can provide discounts to most profit contributing customers.
 •	Analyze what is happening wrong with epic stores and strategize accordingly.
 •	Classify the customers according to range of profit contribution and profit margin.
 
+
+<h3>References</h3>
+
+* https://wwww.codebasics.io
+* https://www.youtube.com/@PragmaticWorks/playlists
+
+<h3>Softwares and Tools</h3>
+
+* MySQL
+* Power BI
+* Power Query Editor
+* DAX
